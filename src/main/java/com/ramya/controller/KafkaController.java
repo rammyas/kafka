@@ -22,7 +22,7 @@ public class KafkaController {
 	public String producer(@RequestParam("message") String message) {
 		kafkaSender.send(message);
 
-		return "Message sent to the Kafka Topic java_in_use_topic Successfully";
+		return "Message sent to the Kafka Topic test-topic Successfully";
 	}
 	
 	@GetMapping(value = "/consumer")
